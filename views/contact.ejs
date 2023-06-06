@@ -1,0 +1,174 @@
+<% if( user !== true){ %> <%- include('partials/loginHeader') %> <% } else { %>
+<%- include('partials/logoutHeader') %> <% } %>
+
+<div class="inner-banner">
+  <div class="container">
+    <div class="inner-title text-center">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <i class="bx bx-chevrons-right"></i>
+        </li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+  </div>
+  <div class="inner-shape">
+    <img src="assets/images/shape/inner-shape.png" alt="Images" />
+  </div>
+</div>
+
+<div class="contact-form-area pt-100 pb-70">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Let's Send Us a Message Below</h2>
+    </div>
+    <div class="row pt-45">
+      <div class="col-lg-4">
+        <div class="contact-info mr-20">
+          <span>Contact Info</span>
+          <h2>Let's Connect With Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            imperdiet varius mi, ut hendrerit magna mollis ac.
+          </p>
+          <ul>
+            <li>
+              <div class="content">
+                <i class="bx bx-phone-call"></i>
+                <h3>Phone Number</h3>
+                <a href="tel:+1(212)-255-5511">+91 212-255-5511</a>
+              </div>
+            </li>
+            <li>
+              <div class="content">
+                <i class="bx bxs-map"></i>
+                <h3>Address</h3>
+                <span>Bhubaneswar,Khordha,Odisha</span>
+              </div>
+            </li>
+            <li>
+              <div class="content">
+                <i class="bx bx-message"></i>
+                <h3>Contact Info</h3>
+                <a
+                  href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#d9b1bcb5b5b699adbcbab1bca1f7bab6b4"
+                  ><span
+                    class="__cf_email__"
+                    data-cfemail="c5ada0a9a9aa85b1a0a6ada0bdeba6aaa8"
+                    >[email&#160;protected]</span
+                  ></a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="contact-form">
+          <form action="/message" method="POST">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label>Your Name <span>*</span></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    required
+                    data-error="Please Enter Your Name"
+                    placeholder="Name"
+                  />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label>Your Email <span>*</span></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    required
+                    data-error="Please Enter Your Email"
+                    placeholder="Email"
+                  />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label>Phone Number <span>*</span></label>
+                  <input
+                    type="text"
+                    name="phone_number"
+                    id="phone_number"
+                    required
+                    data-error="Please Enter Your number"
+                    class="form-control"
+                    placeholder="Phone Number"
+                  />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label>Your Subject <span>*</span></label>
+                  <input
+                    type="text"
+                    name="msg_subject"
+                    id="msg_subject"
+                    class="form-control"
+                    required
+                    data-error="Please Enter Your Subject"
+                    placeholder="Your Subject"
+                  />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12">
+                <div class="form-group">
+                  <label>Your Message <span>*</span></label>
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    id="message"
+                    cols="30"
+                    rows="8"
+                    required
+                    data-error="Write your message"
+                    placeholder="Your Message"
+                  ></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 text-center">
+                <button
+                  type="submit"
+                  class="default-btn btn-bg-two border-radius-50"
+                >
+                  Send Message <i class="bx bx-chevron-right"></i>
+                </button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="map-area">
+  <div class="container-fluid m-0 p-0">
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="369" id="gmap_canvas" src="https://maps.google.com/maps?q=patia&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:369px;width:100%;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:369px;width:100%;}</style></div></div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
