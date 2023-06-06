@@ -6,7 +6,7 @@ const { initializingPassport } = require('./passportConfig')
 const passportlocalmongoose = require('passport-local-mongoose')
 const expressSession = require('express-session')
 const app = express()
-const port = 3000
+const port =  process.env.PORT || 3000
 
 connectMongoose();
 app.set('view engine', 'ejs');
